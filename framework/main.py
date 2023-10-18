@@ -5,8 +5,6 @@ from collections.abc import Iterable
 
 from .alias import StartResponse, WSGIEnvironment, WSGIApplication
 
-__all__ = ['Main']
-
 
 def static(url: str | None, default: str):
     if url is None:

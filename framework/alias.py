@@ -2,8 +2,6 @@ from collections.abc import Callable, Iterable
 from types import TracebackType
 from typing import Any, Protocol, TypeAlias
 
-__all__ = ['StartResponse', 'WSGIEnvironment', 'WSGIApplication']
-
 _ExcInfo: TypeAlias = tuple[type[BaseException], BaseException, TracebackType]
 _OptExcInfo: TypeAlias = _ExcInfo | tuple[None, None, None]
 
